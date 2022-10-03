@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import Signup from './components/Signup';
 import Footer from './components/Footer';
+import Carousel from './components/Carousel';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
+        {/* <Route path="/" element={<Carousel />}></Route> */}
         {/* <Route path="/users">
           <Users />
         </Route>

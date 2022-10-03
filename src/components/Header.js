@@ -1,14 +1,11 @@
 import React from 'react'
 import "./header.css"
-import { FaRegBuilding } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <header>
-            
+        <header> 
             <ul className='navigation'>
-                {/* <span><FaRegBuilding/></span> */}
                 <li className="logo"><a href='/#' >TEK-AR</a></li>
                 <li><a href="/#">Anasayfa</a></li>
                 <li><a href="/#">Foto Galeri</a></li>
