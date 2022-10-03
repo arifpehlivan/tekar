@@ -7,6 +7,7 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import Signup from './components/Signup';
 
 function App() {
   return (
@@ -20,9 +21,8 @@ function App() {
       {/* A <Switch> looks through its children <Route>s and
           renders the first one that matches the current URL. */}
       <Routes>
-        <Route path="/login" element={<Login />}>
-          {/*  */}
-        </Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/signup" element={<Signup />}></Route>
         {/* <Route path="/users">
           <Users />
         </Route>

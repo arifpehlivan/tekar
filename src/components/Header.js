@@ -17,8 +17,8 @@ const Header = () => {
                 <li><a href="/#">Iletisim</a></li>
             </ul>
             <div className="login">        
-                <Link to="/login"><button>Sign In</button> </Link>
-                <Link to="/signup"><button>Sign Up</button></Link>
+                <Link to="/login"><button>Giriş Yap</button> </Link>
+                <Link to="/signup"><button>Kaydol</button></Link>
             </div>
             <div className="mode" >
                 <label >

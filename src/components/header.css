@@ -24,6 +24,9 @@ header a, header ul li a{
 
 header a:hover, header ul li a:hover{
     color: blue;
+    text-decoration: underline;
+    text-underline-offset: 25px;
+    text-decoration-thickness: 3px;
 }
 header .navigation{
     display: flex;
@@ -53,13 +56,13 @@ li{
     border-radius: 5px;
     position: absolute;
     right: 120px;
-    top: 10px;
+    top: 15px;
     display: flex;
     width: 200px;
 }
 .login button{
     /* margin-left: 10px; */
-    font-size: 1rem;
+    font-size: 0.8rem;
     border: none;
     background: blue;
     cursor: pointer;
