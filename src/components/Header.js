@@ -1,6 +1,7 @@
 import React from 'react'
 import "./header.css"
 import { FaRegBuilding } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
@@ -15,9 +16,9 @@ const Header = () => {
                 <li><a href="/#">Hizmetler</a></li>
                 <li><a href="/#">Iletisim</a></li>
             </ul>
-            <div className="login">
-                <button>Sign In</button>
-                <button>Sign Up</button>
+            <div className="login">        
+                <Link to="/login"><button>Sign In</button> </Link>
+                <Link to="/signup"><button>Sign Up</button></Link>
             </div>
             <div className="mode" >
                 <label >

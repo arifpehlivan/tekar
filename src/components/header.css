@@ -37,8 +37,11 @@ header .navigation{
     cursor: pointer;
     align-items: center;
     justify-content: center;
+    /* margin-top: -5px;
+    margin-left: -120px; */
+    position: absolute;
+    left: 0px;
     margin-top: -5px;
-    margin-left: -120px;
 }
 
 li{
@@ -49,12 +52,13 @@ li{
     border: none;
     border-radius: 5px;
     position: absolute;
-    right: 100px;
-    top: 15px;
-    gap: 10px;
+    right: 120px;
+    top: 10px;
+    display: flex;
+    width: 200px;
 }
 .login button{
-    margin-left: 10px;
+    /* margin-left: 10px; */
     font-size: 1rem;
     border: none;
     background: blue;
@@ -112,10 +116,12 @@ input[type="checkbox"]:checked ~.check {
     box-shadow: 0 0 0 2000px black;
     opacity: 0.5;
     z-index: 1000;
+    
 }
 
 input[type="checkbox"]:checked~.check::before {
     transform: translateX(-50px);
+    
 }
 
 .check::after {
@@ -123,7 +129,7 @@ input[type="checkbox"]:checked~.check::before {
     position: absolute;
     top: 2px;
     right: 2px;
-    background: #fff;
+    background: black;
     width: 16px;
     height: 16px;
     border-radius: 50%;
