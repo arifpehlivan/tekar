@@ -8,6 +8,7 @@ import {
   Link
 } from "react-router-dom";
 import Signup from './components/Signup';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Home />
         </Route> */}
       </Routes>
+      <Footer/>
     </div>
   </Router>
   );

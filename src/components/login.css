@@ -1,39 +1,19 @@
 form{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    
     width: 500px;
-    height: 400px;
+    height: 100px;
     flex-direction: column;
     gap: 30px;
     background: #1d2b3a;
     position: absolute;
-    margin-top: 150px;
-    margin-left: 50%;
-    transform: translate(-50%);
+    
+    /* margin-left: 50%;
+    transform: translate(-50%); */
     border-radius: 10px;
     color: white;
-    /* width: 500px;
-    height: 400px;
-    position: absolute;
-    top: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    border: 1px solid blue;
-    margin-left: 50%;
-    transform: translate(-50%);
-    border-radius: 10px; */
 }
-/* form input{
-    padding: 10px;
-    margin: 10px;
-    width: 400px;
-    border-radius: 5px;
-    outline: none;
-    border: 1px solid blue;
-} */
+
 
 form h2{
     color: blue;
@@ -41,7 +21,6 @@ form h2{
 
 form button{
     padding: 10px;
-    margin-left: 20px;
     width: 420px;
     border-radius: 5px;
     cursor: pointer;
