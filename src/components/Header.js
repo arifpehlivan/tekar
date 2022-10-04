@@ -10,7 +10,14 @@ const Header = () => {
                 <li><a href="/#">Anasayfa</a></li>
                 <li><a href="/#">Foto Galeri</a></li>
                 <li><a href="/#">Hakkımızda</a></li>
-                <li><a href="/#">Hizmetler</a></li>
+                <li className='dropdown-menu'>
+                    <a href="/#">Hizmetler</a>
+                    {/* <ul className='dropdown'>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                        <li>Lorem</li>
+                    </ul> */}
+                </li>
                 <li><a href="/#">Iletisim</a></li>
             </ul>
             <div className="login">        

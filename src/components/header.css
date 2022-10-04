@@ -143,3 +143,20 @@ input[type="checkbox"]:checked~.check::before {
 input[type="checkbox"]:checked~.check::after {
     transform: translateX(0px);
 }
+
+/* .dropdown{
+    opacity: 0;
+    position: absolute;
+    top: 50px;
+    background: red;
+    width: 50px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.dropdown-menu:hover .dropdown li{
+    opacity: 1;
+    z-index: 1000;
+} */
