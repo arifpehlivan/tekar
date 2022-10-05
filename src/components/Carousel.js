@@ -2,7 +2,7 @@ import React from 'react'
 import "./carousel.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+import { Navigation, Pagination, A11y } from 'swiper';//, Scrollbar
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
@@ -16,13 +16,11 @@ const Carousel = () => {
     return (
         <main>
             <Swiper
-                modules={[Navigation, Pagination, Scrollbar, A11y]}
+                modules={[Navigation, Pagination, A11y]}//, Scrollbar
                 navigation
                 pagination={{ clickable: true}}
                 loop={true}
-                // ,
-                //     el: `swiper-container`,
-                scrollbar={{ draggable: true }}
+                // scrollbar={{ draggable: true }}
                 spaceBetween={50}
                 slidesPerView={1}
                 onSlideChange={() => console.log('slide change')}
