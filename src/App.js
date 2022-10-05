@@ -10,6 +10,7 @@ import {
 import Signup from './components/Signup';
 import Footer from './components/Footer';
 import Carousel from './components/Carousel';
+import Gallery from './components/Gallery';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
           <Home />
         </Route> */}
       </Routes>
+      <Gallery/>
       <Footer/>
     </div>
   </Router>
