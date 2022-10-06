@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from 'react'
 import "./header.css"
 import { Link } from 'react-router-dom';
 import { Context } from '../context';
+import logo from "../img/tekar.png"
 
 const Header = () => {
     const {mode,setMode} = useContext(Context);
@@ -11,7 +12,7 @@ const Header = () => {
     return (
         <header> 
             <ul className='navigation'>
-                <li className="logo"><a href='/#' >TEK-AR</a></li>
+                <li className="logo"><a href='/#' ><img src={logo} alt="" /></a></li>
                 <li><a href="/#">Anasayfa</a></li>
                 <li><a href="/gallery">Foto Galeri</a></li>
                 <li><a href="/about">Hakkımızda</a></li>

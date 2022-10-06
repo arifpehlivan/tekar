@@ -23,7 +23,7 @@ function App() {
   return (
     <Context.Provider value={data}>
     <Router>
-      <div>
+      <div className={mode ? "dark" : "light"}>
         <Header />
         <Routes>
           <Route path="/login" element={<Login />}></Route>

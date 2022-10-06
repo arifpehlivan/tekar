@@ -8,3 +8,8 @@ body{
   overflow-x: hidden;
   margin: 0;
 }
+
+.dark{
+  opacity: 0.4;
+  color: white;
+}

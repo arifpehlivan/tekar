@@ -24,3 +24,11 @@ img{
     left: 130px;
     font-size: 40px;
 }
+
+.swiper-button-prev,.swiper-button-next{
+    color: #002060 !important; 
+}
+
+.swiper-pagination-bullet{
+    background: #002060 !important; 
+}
