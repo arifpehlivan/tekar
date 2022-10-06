@@ -12,9 +12,16 @@ import Carousel from './components/Carousel';
 import Gallery from './components/Gallery';
 import Services from './components/Services';
 import About from './components/About';
+import {Context} from "./context.js"
+import { useState } from 'react';
 
 function App() {
+  const [mode, setMode] = useState(false);
+  const data = {
+    mode,setMode
+  }
   return (
+    <Context.Provider value={data}>
     <Router>
       <div>
         <Header />
@@ -29,6 +36,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </Context.Provider>
   );
 }
 

@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect, useContext } from 'react'
 import "./header.css"
 import { Link } from 'react-router-dom';
+import { Context } from '../context';
 
 const Header = () => {
+    const {mode,setMode} = useContext(Context);
+    useEffect(()=>{
+        console.log(mode);
+    },[mode])
     return (
         <header> 
             <ul className='navigation'>
@@ -26,7 +31,7 @@ const Header = () => {
             </div>
             <div className="mode" >
                 <label >
-                    <input type="checkbox" />
+                    <input type="checkbox" onClick={() => setMode(!mode)}/>
                     <span className="check"  ></span>
                 </label>
             </div>
