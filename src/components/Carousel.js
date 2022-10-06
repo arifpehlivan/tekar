@@ -2,7 +2,7 @@ import React from 'react'
 import "./carousel.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Navigation, Pagination, A11y } from 'swiper';//, Scrollbar
+import { Navigation, Autoplay, Pagination, A11y } from 'swiper';//, Scrollbar
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
@@ -19,15 +19,19 @@ const Carousel = () => {
     return (
         <main>
             <Swiper
-                modules={[Navigation, Pagination, A11y]}//, Scrollbar
+                modules={[Navigation,Autoplay, Pagination, A11y]}//, Scrollbar
                 navigation
-                pagination={{ clickable: true}}
+                pagination={{ clickable: true }}
                 loop={true}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 // scrollbar={{ draggable: true }}
                 spaceBetween={50}
                 slidesPerView={1}
-                // onSlideChange={() => console.log('slide change')}
-                // onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log('slide change')}
+            // onSwiper={(swiper) => console.log(swiper)}
             >
                 <SwiperSlide>
                     <img src={first} alt="" />
@@ -35,23 +39,23 @@ const Carousel = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={second} alt="" />
-                    <span style={{color: "white"}} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <span style={{ color: "white" }} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={third} alt="" />
-                    <span style={{color: "white"}} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <span style={{ color: "white" }} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={fourth} alt="" />
-                    <span style={{color: "white"}} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <span style={{ color: "white" }} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={fifth} alt="" />
-                    <span style={{color: "white"}} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <span style={{ color: "white" }} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={sixth} alt="" />
-                    <span style={{color: "white"}} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <span style={{ color: "white" }} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
                 </SwiperSlide>
             </Swiper>
         </main>
