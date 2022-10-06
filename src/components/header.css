@@ -40,6 +40,8 @@ header ul li a:hover{
 header .navigation{
     display: flex;
     justify-content: space-between;
+    /* background: red; */
+    margin-left: -150px;
 }
 .logo a{
     width: 200px;
