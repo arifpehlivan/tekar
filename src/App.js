@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import Carousel from './components/Carousel';
 import Gallery from './components/Gallery';
 import Services from './components/Services';
+import About from './components/About';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/" element={<Carousel />}></Route>
           <Route path="/gallery" element={<Gallery />}></Route>
           <Route path="/services" element={<Services />}></Route>
+          <Route path="/about" element={<About/>}></Route>
         </Routes>
         <Footer />
       </div>

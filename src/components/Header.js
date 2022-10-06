@@ -9,7 +9,7 @@ const Header = () => {
                 <li className="logo"><a href='/#' >TEK-AR</a></li>
                 <li><a href="/#">Anasayfa</a></li>
                 <li><a href="/gallery">Foto Galeri</a></li>
-                <li><a href="/#">Hakkımızda</a></li>
+                <li><a href="/about">Hakkımızda</a></li>
                 <li className='dropdown-menu'>
                     <a href="/services">Hizmetler</a>
                     {/* <ul className='dropdown'>
