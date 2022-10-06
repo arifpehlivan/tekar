@@ -1,7 +1,7 @@
 import React from 'react'
 import { data } from './Data'
 import "./gallery.css"
-import { AnimateSharedLayout, motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 
 const ImagePopup = ({poper,layoutId}) => {
     const singleImage = data.find((item) => item.id === layoutId);
@@ -21,7 +21,6 @@ const ImagePopup = ({poper,layoutId}) => {
                             </div>
                         )
                     })}
-                
             </div>
         </div>
     )

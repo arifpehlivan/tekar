@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
 import "./gallery.css"
-import first from "../img/1.jpg"
-import second from "../img/2.jpg"
-import third from "../img/3.jpg"
 import { data } from './Data'
 import ImagePopup from './ImagePopup'
 import { AnimateSharedLayout, motion, AnimatePresence } from "framer-motion"

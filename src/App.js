@@ -15,32 +15,19 @@ import Services from './components/Services';
 
 function App() {
   return (
-    
     <Router>
-      {/* 
-      <Login/> */}
-    <div>
-      <Header/>
-
-      {/* A <Switch> looks through its children <Route>s and
-          renders the first one that matches the current URL. */}
-      <Routes>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/signup" element={<Signup />}></Route>
-        <Route path="/" element={<Carousel />}></Route> 
-        <Route path="/gallery" element={<Gallery/>}></Route> 
-        <Route path="/services" element={<Services/>}></Route> 
-        {/* <Route path="/users">
-          <Users />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route> */}
-      </Routes>
-      
-      <Footer/>
-    </div>
-  </Router>
+      <div>
+        <Header />
+        <Routes>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/signup" element={<Signup />}></Route>
+          <Route path="/" element={<Carousel />}></Route>
+          <Route path="/gallery" element={<Gallery />}></Route>
+          <Route path="/services" element={<Services />}></Route>
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

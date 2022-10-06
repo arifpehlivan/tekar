@@ -3,7 +3,7 @@ import "./login.css"
 
 const Login = () => {
     return (
-        <form>
+        <form id="login">
             <h2>Giriş Yap</h2>
             <div class="inputBox">
                 <input type="text" required="required"/>

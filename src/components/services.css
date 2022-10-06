@@ -26,10 +26,11 @@
 
 .container .box {
     position: relative;
-    width: 220px;
+    width: 250px;
     background: #fff;
     padding: 10px 40px 60px;
     box-shadow: 0 15px 45px rgba(0,0,0,.1);
+    border-radius: 20px;
 }
 
 .container .box::before {
@@ -65,7 +66,7 @@
 .container .box:hover h2 {
     opacity: 0.5;
     color: #fff;
-    transform: translate(180px,-60px);
+    transform: translate(180px,-110px);
 }
 
 .container .box h3 {
