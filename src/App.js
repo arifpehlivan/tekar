@@ -11,6 +11,7 @@ import Signup from './components/Signup';
 import Footer from './components/Footer';
 import Carousel from './components/Carousel';
 import Gallery from './components/Gallery';
+import Services from './components/Services';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/signup" element={<Signup />}></Route>
         <Route path="/" element={<Carousel />}></Route> 
         <Route path="/gallery" element={<Gallery/>}></Route> 
+        <Route path="/services" element={<Services/>}></Route> 
         {/* <Route path="/users">
           <Users />
         </Route>

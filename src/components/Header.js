@@ -11,7 +11,7 @@ const Header = () => {
                 <li><a href="/gallery">Foto Galeri</a></li>
                 <li><a href="/#">Hakkımızda</a></li>
                 <li className='dropdown-menu'>
-                    <a href="/#">Hizmetler</a>
+                    <a href="/services">Hizmetler</a>
                     {/* <ul className='dropdown'>
                         <li>Lorem</li>
                         <li>Lorem</li>
