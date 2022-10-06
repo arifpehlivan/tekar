@@ -5,13 +5,20 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(#0f4675, #0f4675 100%, #fff 100%, #fff 100%);
+    
 }
 .aboutText{
     width: 60vw;
-    margin-top: 10px;
+    margin-top: 0px;
     color: white;
+    padding: 30px;
+    background: blue;
+    border-radius: 20px;
 }
 h3{
-    color: white;
+    margin-top: 80px;
+    color: blue;
+}
+.aboutText p{
+    text-indent:50px;
 }

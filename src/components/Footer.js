@@ -21,9 +21,9 @@ const Footer = () => {
             <div className="links">
                 <ul>
                     <li><a href="/#">Anasayfa</a></li>
-                    <li><a href="/#">Hakkımızda</a></li>
-                    <li><a href="/#gallery">Fotogaleri</a></li>
-                    <li><a href="/#">Hizmetler</a></li>
+                    <li><a href="/about">Hakkımızda</a></li>
+                    <li><a href="/gallery">Fotogaleri</a></li>
+                    <li><a href="/services">Hizmetler</a></li>
                 </ul>
             </div>
             <div className="social">

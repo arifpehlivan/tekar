@@ -44,6 +44,7 @@
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.5s;
+    border-radius: 20px;
 }
 
 .container .box:hover::before {

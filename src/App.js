@@ -4,8 +4,7 @@ import Login from './components/Login';
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  // Link
+  Route
 } from "react-router-dom";
 import Signup from './components/Signup';
 import Footer from './components/Footer';
