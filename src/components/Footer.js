@@ -7,22 +7,22 @@ import { AiFillLinkedin, AiOutlineGoogle } from "react-icons/ai";
 
 const Footer = () => {
     return (
-        <footer>
+        <footer id="connect">
             <div className="connect">
                 
-                <li><i><MdLocationOn/></i>Adres: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, reiciendis.
-                    <span> Erzurum</span>
-                </li>
-                <li><i><FiPhone/></i>
-                    Tel:
-                    <span>0123456789</span>
-                </li>
+                <div><i><MdLocationOn/></i>
+                    <span>Adres: Kurtuluş mahallesi Ford servis arkası Türk Telekom şantiyesi   <br /> Erzurum / Yakutiye </span>
+                </div>
+                <div><i><FiPhone/></i>
+                    
+                    <span>Tel:0123456789</span>
+                </div>
             </div>
             <div className="links">
                 <ul>
                     <li><a href="/#">Anasayfa</a></li>
                     <li><a href="/#">Hakkımızda</a></li>
-                    <li><a href="/#">Fotogaleri</a></li>
+                    <li><a href="/#gallery">Fotogaleri</a></li>
                     <li><a href="/#">Hizmetler</a></li>
                 </ul>
             </div>

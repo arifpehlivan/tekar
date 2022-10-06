@@ -9,6 +9,9 @@ import 'swiper/css/scrollbar';
 import first from "../img/1.jpg"
 import second from "../img/2.jpg"
 import third from "../img/3.jpg"
+import fourth from "../img/4.jpg"
+import fifth from "../img/5.jpg"
+import sixth from "../img/6.jpg"
 
 
 const Carousel = () => {
@@ -36,6 +39,18 @@ const Carousel = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={third} alt="" />
+                    <span style={{color: "white"}} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={fourth} alt="" />
+                    <span style={{color: "white"}} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={fifth} alt="" />
+                    <span style={{color: "white"}} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src={sixth} alt="" />
                     <span style={{color: "white"}} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
                 </SwiperSlide>
             </Swiper>

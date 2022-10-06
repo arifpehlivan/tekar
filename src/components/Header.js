@@ -8,7 +8,7 @@ const Header = () => {
             <ul className='navigation'>
                 <li className="logo"><a href='/#' >TEK-AR</a></li>
                 <li><a href="/#">Anasayfa</a></li>
-                <li><a href="/#">Foto Galeri</a></li>
+                <li><a href="/gallery">Foto Galeri</a></li>
                 <li><a href="/#">Hakkımızda</a></li>
                 <li className='dropdown-menu'>
                     <a href="/#">Hizmetler</a>
@@ -18,7 +18,7 @@ const Header = () => {
                         <li>Lorem</li>
                     </ul> */}
                 </li>
-                <li><a href="/#">Iletisim</a></li>
+                <li><a href="/#connect">Iletisim</a></li>
             </ul>
             <div className="login">        
                 <Link to="/login"><button>Giriş Yap</button></Link>

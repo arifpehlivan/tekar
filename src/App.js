@@ -27,6 +27,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
         <Route path="/" element={<Carousel />}></Route> 
+        <Route path="/gallery" element={<Gallery/>}></Route> 
         {/* <Route path="/users">
           <Users />
         </Route>
@@ -34,7 +35,7 @@ function App() {
           <Home />
         </Route> */}
       </Routes>
-      <Gallery/>
+      
       <Footer/>
     </div>
   </Router>

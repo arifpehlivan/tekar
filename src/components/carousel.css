@@ -5,6 +5,7 @@ main{
     height: 90%;
     z-index: 100;
     display: flex;
+    /* margin-left: 100px; */
 }
 img{
     width: 90%;

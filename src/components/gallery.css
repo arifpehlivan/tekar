@@ -1,4 +1,88 @@
-.container{
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+} */
+/* .pop_up_image img{
+    width: 100px;
+    height: 100px;
+} */
+.image_grid{
+    /* margin-top: 800px; */
+    margin-top: 100px;
+    width: 100vw;
+    height: 200px;
+    display: grid;
+    padding: 0px;
+    /* margin-left: -100px; */
+    width: 90%;
+    /* margin-left: 100px; */
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 20px;
+    z-index: 20000;
+}
+.image_grid img{
+    cursor: pointer;
+}
+.image_card{
+    display: block;
+}
+.image_card img{
+    width: 100%;
+    border-radius: 20px;
+    background: red;
+}
+.pop_up_container{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+    margin-top: 70px;
+}
+.close_button{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.close_button:hover{
+    color: red;
+}
+.pop_up_image{
+    width: 40vw;
+    margin: auto;
+    
+}
+.pop_up_image img{
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.pop_tabs{
+    width: 40vw;
+    display: flex;
+    margin: auto;
+    justify-content: space-evenly;
+}
+.tab{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.tab img{
+    width: 100%;
+    border-radius: 10px;
+}
+/* .image_grid img{
+    width: 300px;
+    height: 400px;
+} */
+
+
+/* .container{
     width: 100%;
     height: 100vh;
     margin-left: 10px;
@@ -37,4 +121,4 @@
 .container img{
     width: 500px;
     height: 400px;
-}
+} */
