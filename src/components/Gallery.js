@@ -6,14 +6,17 @@ import { AnimateSharedLayout, motion, AnimatePresence } from "framer-motion"
 
 const Gallery = () => {
     const [popup, setPopup] = useState(false);
-    const [layoutId, setLayoutId] = useState(null);
+    const [layoutid, setLayoutId] = useState(null);
     const poper = (id) =>{
         if(popup===false){
             setLayoutId(id);
             setPopup(!popup);
+            console.log("first");
         }else{
-            setPopup(!popup);
-            setLayoutId(null);
+            setPopup(popup);
+            setLayoutId(id);
+            console.log(id)
+            console.log("second");
         }
     }
     return (
@@ -23,14 +26,14 @@ const Gallery = () => {
                     {data.map((item) => {
                         return (
                             <div key={item.id} className="image_card" onClick={()=> poper(item.id)}>
-                                <motion.img src={`../img/${item.image}`} alt="" layoutId={item.id} />
+                                <motion.img src={`../img/${item.image}`} alt="" layoutid={item.id} />
                             </div>
                         )
                     })}
                 </div>
                 <div className="image_pop_up">
                     <AnimatePresence>
-                        {popup && <ImagePopup  poper={poper} layoutId={layoutId}/>}
+                        {popup && <ImagePopup  poper={poper} layoutid={layoutid}/>}
                     </AnimatePresence>
                 </div>
             </AnimateSharedLayout>
