@@ -18,6 +18,10 @@ const Gallery = () => {
             console.log(id)
             console.log("second");
         }
+        
+    }
+    const poper1 = () =>{
+        setPopup(!popup)
     }
     return (
         <div>
@@ -33,7 +37,7 @@ const Gallery = () => {
                 </div>
                 <div className="image_pop_up">
                     <AnimatePresence>
-                        {popup && <ImagePopup  poper={poper} layoutid={layoutid}/>}
+                        {popup && <ImagePopup  poper={poper} poper1={poper1} layoutid={layoutid}/>}
                     </AnimatePresence>
                 </div>
             </AnimateSharedLayout>

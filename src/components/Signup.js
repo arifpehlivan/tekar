@@ -22,7 +22,7 @@ const Signup = () => {
                     </div>
                     <div class="inputBox">
                         <input type="password" required="required" />
-                        <span>Şifre</span>
+                        <span>Tekrar Şifre</span>
                     </div>
                     <button>Kaydol</button>
                 </form>
