@@ -9,12 +9,12 @@ const Footer = () => {
     return (
         <footer id="connect">
             <div className="connect">
-                
-                <div><i><MdLocationOn/></i>
-                    <span>Adres: Kurtuluş mahallesi Ford servis arkası Türk Telekom şantiyesi   <br /> Erzurum / Yakutiye </span>
+                <div>
+                    <i><MdLocationOn/></i>
+                    <span>Adres: Kurtuluş mahallesi Ford servis arkası Türk Telekom şantiyesi Erzurum / Yakutiye </span>
                 </div>
-                <div><i><FiPhone/></i>
-                    
+                <div>
+                    <i><FiPhone/></i>
                     <span>Tel:0123456789</span>
                 </div>
             </div>

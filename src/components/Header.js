@@ -10,7 +10,7 @@ const Header = () => {
         console.log(mode);
     },[mode])
     return (
-        <header> 
+        <header className={mode ? "dark" : "light"}> 
             <ul className='navigation'>
                 <li className="logo"><a href='/#' ><img src={logo} alt="" /></a></li>
                 <li><a href="/#">Anasayfa</a></li>

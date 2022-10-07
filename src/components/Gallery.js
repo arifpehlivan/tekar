@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import "./gallery.css"
 import { data } from './Data'
 import ImagePopup from './ImagePopup'
 import { AnimateSharedLayout, motion, AnimatePresence } from "framer-motion"
+import { Context } from '../context';
 
 const Gallery = () => {
+    const {mode,setMode} = useContext(Context);
     const [popup, setPopup] = useState(false);
     const [layoutid, setLayoutId] = useState(null);
     const poper = (id) =>{
@@ -18,13 +20,12 @@ const Gallery = () => {
             console.log(id)
             console.log("second");
         }
-        
     }
     const poper1 = () =>{
         setPopup(!popup)
     }
     return (
-        <div>
+        <div className={mode ? "dark" : "light"}>
             <AnimateSharedLayout>
                 <div className="image_grid">
                     {data.map((item) => {

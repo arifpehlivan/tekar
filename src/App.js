@@ -13,17 +13,26 @@ import Gallery from './components/Gallery';
 import Services from './components/Services';
 import About from './components/About';
 import {Context} from "./context.js"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function App() {
   const [mode, setMode] = useState(false);
   const data = {
     mode,setMode
   }
+  useEffect(()=>{
+    if(mode){
+      document.body.classList.add("dark");
+    }else{
+      document.body.classList.remove("dark");
+    }
+    
+  })
   return (
     <Context.Provider value={data}>
     <Router>
-      <div className={mode ? "dark" : "light"}>
+      <div > 
+      {/* className={mode ? "dark" : "light"} */}
         <Header />
         <Routes>
           <Route path="/login" element={<Login />}></Route>

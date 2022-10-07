@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { data } from './Data'
 import "./gallery.css"
 import { motion } from "framer-motion"
+import { Context } from '../context';
 
 const ImagePopup = ({ poper, poper1, layoutid }) => {
-    // console.log("poper",poper, "layoutid", layoutid);
+    const {mode,setMode} = useContext(Context);
     const singleImage = data.find((item) => item.id === layoutid);
     return (
-        <div className='pop_up_container'>
+        <div className={mode ? "dark" : "light"}>
+            <div className='pop_up_container'>
             <div className="close_button">
                 <p onClick={poper1}>X</p>
             </div>
@@ -25,6 +27,8 @@ const ImagePopup = ({ poper, poper1, layoutid }) => {
                 })}
             </div>
         </div>
+        </div>
+        
     )
 }
 

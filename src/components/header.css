@@ -172,3 +172,11 @@ input[type="checkbox"]:checked~.check::after {
     opacity: 1;
     z-index: 1000;
 } */
+
+.dark ul li a{
+    color: white;
+}
+
+.dark{
+    box-shadow: 0 1px 1px white;
+}
