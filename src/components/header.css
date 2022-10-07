@@ -63,7 +63,7 @@ li{
     list-style: none;
 }
 
-.login{
+.header-login{
     border: none;
     border-radius: 5px;
     position: absolute;
@@ -72,7 +72,7 @@ li{
     display: flex;
     width: 200px;
 }
-.login button{
+.header-login button{
     /* margin-left: 10px; */
     font-size: 0.8rem;
     border: none;
@@ -85,7 +85,7 @@ li{
     transition: ease-in-out 0.5s;
 }
 
-.login button:hover{
+.header-login button:hover{
     /* color: #002060; */
     background: #2F5597;
 }

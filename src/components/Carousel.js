@@ -26,6 +26,7 @@ const Carousel = () => {
                 autoplay={{
                     delay: 2500,
                     disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
                 }}
                 // scrollbar={{ draggable: true }}
                 spaceBetween={50}
@@ -35,27 +36,27 @@ const Carousel = () => {
             >
                 <SwiperSlide>
                     <img src={first} alt="" />
-                    <span className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <span className='slideText'>Tekar Elektrik İnşaat A.Ş</span>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={second} alt="" />
-                    <span style={{ color: "white" }} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <span  className='slideText'>Tekar Elektrik İnşaat A.Ş</span>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={third} alt="" />
-                    <span style={{ color: "white" }} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <span style={{ color: "white" }} className='slideText'>Tekar Elektrik İnşaat A.Ş</span>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={fourth} alt="" />
-                    <span style={{ color: "white" }} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <span  className='slideText'>Tekar Elektrik İnşaat A.Ş</span>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={fifth} alt="" />
-                    <span style={{ color: "white" }} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <span style={{ color: "white" }} className='slideText'>Tekar Elektrik İnşaat A.Ş</span>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={sixth} alt="" />
-                    <span style={{ color: "white" }} className='slideText'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                    <span style={{ color: "white" }} className='slideText'>Tekar Elektrik İnşaat A.Ş</span>
                 </SwiperSlide>
             </Swiper>
         </main>

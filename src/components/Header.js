@@ -26,7 +26,7 @@ const Header = () => {
                 </li>
                 <li><a href="/#connect">Iletisim</a></li>
             </ul>
-            <div className="login">        
+            <div className="header-login">        
                 <Link to="/login"><button>Giriş Yap</button></Link>
                 <Link to="/signup"><button>Kaydol</button></Link>
             </div>
