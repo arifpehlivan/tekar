@@ -98,11 +98,11 @@
     background: #2F5597;
 }
 
-.inputBox{
+.login .inputBox{
     position: relative;
     width: 300px;
 }
-.inputBox input{
+.login .inputBox input{
     width: 100%;
     padding: 10px;
     border: 1px solid #002060;
@@ -113,7 +113,7 @@
     font-size: 1em;
     transition: 0.5s;
 }
-.inputBox span{
+.login .inputBox span{
     position: absolute;
     left: 0;
     top: 4px;
@@ -125,8 +125,8 @@
     transition: 0.5s;
     color: #002060;
 }
-.inputBox input:valid ~ span,
-.inputBox input:focus ~ span{
+.login .inputBox input:valid ~ span,
+.login .inputBox input:focus ~ span{
     color: white;
     transform: translateX(10px) translateY(-7px);
     font-size: 0.65em;
@@ -137,14 +137,14 @@
     letter-spacing: 0.2em;
     border-radius: 5px;
 }
-.inputBox:nth-child(2) input:valid ~ span,
-.inputBox:nth-child(2) input:focus ~ span{
+.login .inputBox:nth-child(2) input:valid ~ span,
+.login .inputBox:nth-child(2) input:focus ~ span{
     background: #002060;
     color: white;
     border-radius: 5px;
 }
-.inputBox input:valid,
-.inputBox input:focus{
+.login .inputBox input:valid,
+.login .inputBox input:focus{
     /* border: 1px solid #002060; */
     box-shadow: 0 0 0 1px blue;
     border: none;

@@ -1,32 +1,60 @@
 import React from 'react'
 import "./signup.css"
+import second from "../img/2.jpg"
 
 const Signup = () => {
     return (
-        <form>
-            <h2>Kaydol</h2>
-            <div class="inputBox">
-                <input type="text" required="required"/>
-                <span>Name</span>
+        <div className="signup-container">
+            <div className='signup'>
+                <form>
+                    <h2>Kaydol</h2>
+                    <div class="inputBox">
+                        <input type="text" required="required" />
+                        <span>Ad Soyad</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="text" required="required" />
+                        <span>Mail</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" required="required" />
+                        <span>Şifre</span>
+                    </div>
+                    <div class="inputBox">
+                        <input type="password" required="required" />
+                        <span>Şifre</span>
+                    </div>
+                    <button>Kaydol</button>
+                </form>
             </div>
-            <div class="inputBox">
-                <input type="text" required="required"/>
-                <span>Mail</span>
+            <div className="signup-back">
+                <img src={second} alt="" />
+                <div className="signup-img-text">
+                    <h1>Tekar Elektrik İnşaat A.Ş</h1>
+                    <h3 textIndent="50px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ullam assumenda doloribus quis consequuntur dolore, exercitationem suscipit aut molestias facere.</h3>
+                </div>
             </div>
-            <div class="inputBox">
-                <input type="password" required="required"/>
-                <span>Password</span>
-            </div>
-            <div class="inputBox">
-                <input type="password" required="required"/>
-                <span>Password</span>
-            </div>
-            <button>Kaydol</button>
-            {/* 
-            <input type="text" placeholder='Mail'/>
-            <input type="password" placeholder='Şifre'/>
-            <button>Giriş Yap</button> */}
-        </form>
+        </div>
+        // <form>
+        //     <h2>Kaydol</h2>
+        //     <div class="inputBox">
+        //         <input type="text" required="required"/>
+        //         <span>Ad Soyad</span>
+        //     </div>
+        //     <div class="inputBox">
+        //         <input type="text" required="required"/>
+        //         <span>Mail</span>
+        //     </div>
+        //     <div class="inputBox">
+        //         <input type="password" required="required"/>
+        //         <span>Şifre</span>
+        //     </div>
+        //     <div class="inputBox">
+        //         <input type="password" required="required"/>
+        //         <span>Şifre</span>
+        //     </div>
+        //     <button>Kaydol</button>
+        // </form>
     )
 }
 
