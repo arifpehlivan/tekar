@@ -6,6 +6,8 @@ import logo from "../img/tekar.png"
 
 const Header = () => {
     const {mode,setMode} = useContext(Context);
+    const modes = JSON.parse(localStorage.getItem('modes'));
+    setMode(modes);
     useEffect(()=>{
         console.log(mode);
     },[mode])

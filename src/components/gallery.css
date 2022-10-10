@@ -127,3 +127,6 @@
     height: 400px;
 } */
 
+.dark .pop_up_container{
+    background: black;
+}

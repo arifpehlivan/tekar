@@ -8,19 +8,19 @@ const Signup = () => {
             <div className='signup'>
                 <form>
                     <h2>Kaydol</h2>
-                    <div class="inputBox">
+                    <div className="inputBox">
                         <input type="text" required="required" />
                         <span>Ad Soyad</span>
                     </div>
-                    <div class="inputBox">
+                    <div className="inputBox">
                         <input type="text" required="required" />
                         <span>Mail</span>
                     </div>
-                    <div class="inputBox">
+                    <div className="inputBox">
                         <input type="password" required="required" />
                         <span>Şifre</span>
                     </div>
-                    <div class="inputBox">
+                    <div className="inputBox">
                         <input type="password" required="required" />
                         <span>Tekrar Şifre</span>
                     </div>
@@ -30,8 +30,8 @@ const Signup = () => {
             <div className="signup-back">
                 <img src={second} alt="" />
                 <div className="signup-img-text">
-                    <h1>Tekar Elektrik İnşaat A.Ş</h1>
-                    <h3 textIndent="50px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ullam assumenda doloribus quis consequuntur dolore, exercitationem suscipit aut molestias facere.</h3>
+                    <h1 >Tekar Elektrik İnşaat A.Ş</h1>
+                    <h3 textindent="50px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus ullam assumenda doloribus quis consequuntur dolore, exercitationem suscipit aut molestias facere.</h3>
                 </div>
             </div>
         </div>

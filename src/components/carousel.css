@@ -32,3 +32,11 @@ img{
 .swiper-pagination-bullet{
     background: #002060 !important; 
 }
+
+.dark .swiper-button-prev, .dark .swiper-button-next{
+    color: white !important; 
+}
+
+.dark .swiper-pagination-bullet{
+    background: white !important; 
+}

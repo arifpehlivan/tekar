@@ -26,3 +26,7 @@ h3{
 .aboutText p{
     text-indent:50px;
 }
+
+.dark h3{
+    color: white;
+}

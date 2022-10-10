@@ -12,39 +12,48 @@ import Carousel from './components/Carousel';
 import Gallery from './components/Gallery';
 import Services from './components/Services';
 import About from './components/About';
-import {Context} from "./context.js"
+import { Context } from "./context.js"
 import { useEffect, useState } from 'react';
 
 function App() {
   const [mode, setMode] = useState(false);
   const data = {
-    mode,setMode
+    mode, setMode
   }
-  useEffect(()=>{
-    if(mode){
+  useEffect(() => {
+    localStorage.setItem('modes', JSON.stringify(mode));
+  }, [mode]);
+  useEffect(() => {
+    const modes = JSON.parse(localStorage.getItem('modes'));
+    if (modes) {
+      setMode(mode);
+      console.log("modes",mode)
+    }
+  }, [mode]);
+  useEffect(() => {
+    if (mode) {
       document.body.classList.add("dark");
-    }else{
+    } else {
       document.body.classList.remove("dark");
     }
-    
   })
   return (
     <Context.Provider value={data}>
-    <Router>
-      <div > 
-      {/* className={mode ? "dark" : "light"} */}
-        <Header />
-        <Routes>
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="/signup" element={<Signup />}></Route>
-          <Route path="/" element={<Carousel />}></Route>
-          <Route path="/gallery" element={<Gallery />}></Route>
-          <Route path="/services" element={<Services />}></Route>
-          <Route path="/about" element={<About/>}></Route>
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
+      <Router>
+        <div >
+          {/* className={mode ? "dark" : "light"} */}
+          <Header />
+          <Routes>
+            <Route path="/login" element={<Login />}></Route>
+            <Route path="/signup" element={<Signup />}></Route>
+            <Route path="/" element={<Carousel />}></Route>
+            <Route path="/gallery" element={<Gallery />}></Route>
+            <Route path="/services" element={<Services />}></Route>
+            <Route path="/about" element={<About />}></Route>
+          </Routes>
+          <Footer />
+        </div>
+      </Router>
     </Context.Provider>
   );
 }

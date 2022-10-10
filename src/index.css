@@ -10,6 +10,7 @@ body{
 }
 
 .dark{
-  background: black;
+  background: rgb(94, 91, 91);
   color: white;
+  transition: ease-in-out 1s;
 }

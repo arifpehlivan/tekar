@@ -239,3 +239,7 @@ form button:hover{
 .inputBox input:focus{
     border: 1px solid blue;
 } */
+
+.dark .signup-container h2{
+    color: white;
+}
