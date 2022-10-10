@@ -180,3 +180,13 @@ input[type="checkbox"]:checked~.check::after {
 .dark header{
     box-shadow: 0 1px 1px white;
 }
+
+.checkText{
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    top: 25px;
+    left: -5px;
+    font-size: 10px;
+    
+}

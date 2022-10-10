@@ -6,8 +6,8 @@ import logo from "../img/tekar.png"
 
 const Header = () => {
     const {mode,setMode} = useContext(Context);
-    const modes = JSON.parse(localStorage.getItem('modes'));
-    setMode(modes);
+    // const modes = JSON.parse(localStorage.getItem('modes'));
+    // setMode(modes);
     useEffect(()=>{
         console.log(mode);
     },[mode])
@@ -35,7 +35,8 @@ const Header = () => {
             <div className="mode" >
                 <label >
                     <input type="checkbox" onClick={() => setMode(!mode)}/>
-                    <span className="check"  ></span>
+                    <span className="check"></span>
+                    <span className="checkText">{mode ? "Dark Mode" : "Light Mode"}</span>
                 </label>
             </div>
         </header>

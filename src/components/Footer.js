@@ -33,7 +33,7 @@ const Footer = () => {
                 <li><a href="/#">
                     <AiFillLinkedin />
                 </a></li>
-                <li><a href="/#">
+                <li><a href="mailto:arifpehlivanapap@gmail.com" >
                     <AiOutlineGoogle />
                 </a></li>
                 <li><a href="/#">
