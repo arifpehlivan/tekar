@@ -1,32 +1,30 @@
-.aboutContainer{
+.aboutContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    
 }
-.aboutText{
+
+.aboutText {
     width: 60vw;
     margin-top: 0px;
     color: white;
     padding: 30px;
     background: #002060;
     border-radius: 20px;
-    /* background: linear-gradient(217deg, #FDD867, #375622 70.71%),
-            linear-gradient(127deg, #FD0802, #FFE18A 70.71%),
-            linear-gradient(336deg, #002060, #A7A7A7 70.71%); */
-    /* background-image: url("../img/1.jpg"); */
 }
-h3{
+
+h3 {
     margin-top: 80px;
     color: #002060;
 }
-.aboutText p{
-    text-indent:50px;
+
+.aboutText p {
+    text-indent: 50px;
 }
 
-.dark h3{
+.dark h3 {
     color: white;
 }

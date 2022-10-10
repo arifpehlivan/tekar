@@ -1,23 +1,20 @@
-main{
+main {
     position: absolute;
     top: 70px;
     width: 100%;
     height: 90%;
     z-index: 100;
     display: flex;
-    /* margin-left: 100px; */
 }
-img{
+
+img {
     width: 90%;
     height: 90%;
     margin: 20px 75px;
     border-radius: 10px;
 }
-/* .swiper-container{
-    margin-top: 0;
-} */
 
-.slideText{
+.slideText {
     position: absolute;
     top: 570px;
     z-index: 10;
@@ -25,18 +22,20 @@ img{
     font-size: 40px;
 }
 
-.swiper-button-prev,.swiper-button-next{
-    color: #002060 !important; 
+.swiper-button-prev,
+.swiper-button-next {
+    color: #002060 !important;
 }
 
-.swiper-pagination-bullet{
-    background: #002060 !important; 
+.swiper-pagination-bullet {
+    background: #002060 !important;
 }
 
-.dark .swiper-button-prev, .dark .swiper-button-next{
-    color: white !important; 
+.dark .swiper-button-prev,
+.dark .swiper-button-next {
+    color: white !important;
 }
 
-.dark .swiper-pagination-bullet{
-    background: white !important; 
+.dark .swiper-pagination-bullet {
+    background: white !important;
 }

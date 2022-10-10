@@ -1,8 +1,8 @@
 import React from 'react'
 import "./footer.css"
 import { FaInstagram, FaFacebook } from "react-icons/fa";
-import {MdLocationOn } from "react-icons/md";
-import {FiPhone } from "react-icons/fi";
+import { MdLocationOn } from "react-icons/md";
+import { FiPhone } from "react-icons/fi";
 import { AiFillLinkedin, AiOutlineGoogle } from "react-icons/ai";
 
 const Footer = () => {
@@ -10,11 +10,11 @@ const Footer = () => {
         <footer id="connect">
             <div className="connect">
                 <div>
-                    <i><MdLocationOn/></i>
+                    <i><MdLocationOn /></i>
                     <span>Adres: Kurtuluş mahallesi Ford servis arkası Türk Telekom şantiyesi Erzurum / Yakutiye </span>
                 </div>
                 <div>
-                    <i><FiPhone/></i>
+                    <i><FiPhone /></i>
                     <span>Tel:0123456789</span>
                 </div>
             </div>

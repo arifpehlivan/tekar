@@ -6,22 +6,22 @@ import { AnimateSharedLayout, motion, AnimatePresence } from "framer-motion"
 import { Context } from '../context';
 
 const Gallery = () => {
-    const {mode,setMode} = useContext(Context);
+    const { mode } = useContext(Context);
     const [popup, setPopup] = useState(false);
     const [layoutid, setLayoutId] = useState(null);
-    const poper = (id) =>{
-        if(popup===false){
+    const poper = (id) => {
+        if (popup === false) {
             setLayoutId(id);
             setPopup(!popup);
             console.log("first");
-        }else{
+        } else {
             setPopup(popup);
             setLayoutId(id);
             console.log(id)
             console.log("second");
         }
     }
-    const poper1 = () =>{
+    const poper1 = () => {
         setPopup(!popup)
     }
     return (
@@ -30,7 +30,7 @@ const Gallery = () => {
                 <div className="image_grid">
                     {data.map((item) => {
                         return (
-                            <div key={item.id} className="image_card" onClick={()=> poper(item.id)}>
+                            <div key={item.id} className="image_card" onClick={() => poper(item.id)}>
                                 <motion.img src={`../img/${item.image}`} alt="" layoutid={item.id} />
                             </div>
                         )
@@ -38,32 +38,11 @@ const Gallery = () => {
                 </div>
                 <div className="image_pop_up">
                     <AnimatePresence>
-                        {popup && <ImagePopup  poper={poper} poper1={poper1} layoutid={layoutid}/>}
+                        {popup && <ImagePopup poper={poper} poper1={poper1} layoutid={layoutid} />}
                     </AnimatePresence>
                 </div>
             </AnimateSharedLayout>
         </div>
-        // <div className='container' id="gallery">
-        //     <h2>Foto Galeri</h2>
-        //     <div className="cards">
-        //         <div className="card">
-        //             <img src={first} alt="" />
-        //             <h3>Lorem ipsum dolor sit amet.</h3>
-        //         </div>
-        //         <div className="card">
-        //             <img src={first} alt="" />
-        //             <h3>Lorem ipsum dolor sit amet.</h3>
-        //         </div>
-        //         <div className="card">
-        //             <img src={first} alt="" />
-        //             <h3>Lorem ipsum dolor sit amet.</h3>
-        //         </div>
-        //         <div className="card">
-        //             <img src={first} alt="" />
-        //             <h3>Lorem ipsum dolor sit amet.</h3>
-        //         </div>
-        //     </div>
-        // </div>
     )
 }
 

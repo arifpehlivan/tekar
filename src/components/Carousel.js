@@ -15,11 +15,10 @@ import sixth from "../img/6.jpg"
 
 
 const Carousel = () => {
-
     return (
         <main>
             <Swiper
-                modules={[Navigation,Autoplay, Pagination, A11y]}//, Scrollbar
+                modules={[Navigation, Autoplay, Pagination, A11y]}
                 navigation
                 pagination={{ clickable: true }}
                 loop={true}
@@ -28,19 +27,16 @@ const Carousel = () => {
                     disableOnInteraction: false,
                     pauseOnMouseEnter: true,
                 }}
-                // scrollbar={{ draggable: true }}
                 spaceBetween={50}
                 slidesPerView={1}
-            // onSlideChange={() => console.log('slide change')}
-            // onSwiper={(swiper) => console.log(swiper)}
             >
                 <SwiperSlide>
                     <img src={first} alt="" />
-                    <span className='slideText'>Tekar Elektrik İnşaat A.Ş</span>
+                    <span style={{ color: "black" }} className='slideText'>Tekar Elektrik İnşaat A.Ş</span>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={second} alt="" />
-                    <span  className='slideText'>Tekar Elektrik İnşaat A.Ş</span>
+                    <span className='slideText'>Tekar Elektrik İnşaat A.Ş</span>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={third} alt="" />
@@ -48,7 +44,7 @@ const Carousel = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={fourth} alt="" />
-                    <span  className='slideText'>Tekar Elektrik İnşaat A.Ş</span>
+                    <span className='slideText'>Tekar Elektrik İnşaat A.Ş</span>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={fifth} alt="" />

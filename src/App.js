@@ -21,16 +21,6 @@ function App() {
     mode, setMode
   }
   useEffect(() => {
-    localStorage.setItem('modes', JSON.stringify(mode));
-  }, [mode]);
-  useEffect(() => {
-    const modes = JSON.parse(localStorage.getItem('modes'));
-    if (modes) {
-      setMode(mode);
-      console.log("modes",mode)
-    }
-  }, [mode]);
-  useEffect(() => {
     if (mode) {
       document.body.classList.add("dark");
     } else {
@@ -41,7 +31,6 @@ function App() {
     <Context.Provider value={data}>
       <Router>
         <div >
-          {/* className={mode ? "dark" : "light"} */}
           <Header />
           <Routes>
             <Route path="/login" element={<Login />}></Route>
@@ -50,6 +39,7 @@ function App() {
             <Route path="/gallery" element={<Gallery />}></Route>
             <Route path="/services" element={<Services />}></Route>
             <Route path="/about" element={<About />}></Route>
+            <Route path="/connect" element={<Footer />}></Route>
           </Routes>
           <Footer />
         </div>

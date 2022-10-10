@@ -1,4 +1,4 @@
-header{
+header {
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -12,7 +12,9 @@ header{
     background: white;
     transition: ease-in-out 1s;
 }
-header a, header ul li a{
+
+header a,
+header ul li a {
     display: flex;
     width: 150px;
     color: black;
@@ -20,8 +22,6 @@ header a, header ul li a{
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     list-style: none;
-    /* align-items: center;
-    justify-content: center; */
     padding: 5px 5px;
     transition: ease-in-out 0.5s;
     text-align: center;
@@ -29,21 +29,20 @@ header a, header ul li a{
     margin-left: 0;
 }
 
-header ul li a:hover{
+header ul li a:hover {
     color: #002060;
     text-decoration: underline;
     text-underline-offset: 25px;
     text-decoration-thickness: 3px;
-    /* background: #002060;
-    border-radius: 10px; */
 }
-header .navigation{
+
+header .navigation {
     display: flex;
     justify-content: space-between;
-    /* background: red; */
     margin-left: -150px;
 }
-.logo a{
+
+.logo a {
     width: 200px;
     font-size: 1.5em;
     letter-spacing: 0.22rem;
@@ -51,19 +50,17 @@ header .navigation{
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    /* margin-top: -5px;
-    margin-left: -120px; */
     position: absolute;
     left: 0px;
     margin-top: -35px;
     margin-left: 15px;
 }
 
-li{
+li {
     list-style: none;
 }
 
-.header-login{
+.header-login {
     border: none;
     border-radius: 5px;
     position: absolute;
@@ -72,8 +69,8 @@ li{
     display: flex;
     width: 200px;
 }
-.header-login button{
-    /* margin-left: 10px; */
+
+.header-login button {
     font-size: 0.8rem;
     border: none;
     background: #002060;
@@ -85,12 +82,11 @@ li{
     transition: ease-in-out 0.5s;
 }
 
-.header-login button:hover{
-    /* color: #002060; */
+.header-login button:hover {
     background: #2F5597;
 }
 
-.mode{
+.mode {
     position: absolute;
     right: 50px;
     top: 25px;
@@ -123,20 +119,15 @@ input[type="checkbox"] {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    /* transition: 0.1s; */
 }
 
-input[type="checkbox"]:checked ~.check {
+input[type="checkbox"]:checked~.check {
     background: #002060;
-    /* box-shadow: 0 0 0 2000px black;
-    opacity: 0.5; */
     z-index: 1000;
-    
 }
 
 input[type="checkbox"]:checked~.check::before {
     transform: translateX(-50px);
-    
 }
 
 .check::after {
@@ -148,7 +139,6 @@ input[type="checkbox"]:checked~.check::before {
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    /* transition: 0.1s; */
     transform: translateX(50px);
 }
 
@@ -156,37 +146,19 @@ input[type="checkbox"]:checked~.check::after {
     transform: translateX(0px);
 }
 
-/* .dropdown{
-    opacity: 0;
-    position: absolute;
-    top: 50px;
-    background: red;
-    width: 50px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    z-index: 1000;
-}
-
-.dropdown-menu:hover .dropdown li{
-    opacity: 1;
-    z-index: 1000;
-} */
-
-.dark ul li a{
+.dark ul li a {
     color: white;
 }
 
-.dark header{
+.dark header {
     box-shadow: 0 1px 1px white;
 }
 
-.checkText{
+.checkText {
     position: absolute;
     width: 100px;
     height: 20px;
     top: 25px;
     left: -5px;
     font-size: 10px;
-    
 }

@@ -1,4 +1,4 @@
-footer{
+footer {
     position: absolute;
     bottom: 0;
     background: #002060;
@@ -12,47 +12,49 @@ footer{
     z-index: 10;
 }
 
-.social{
+.social {
     font-size: 30px;
     color: white;
     display: flex;
     flex-direction: row;
 }
-.social li a{
+
+.social li a {
     color: white;
 }
-.links ul li a{
+
+.links ul li a {
     color: white;
     text-decoration: none;
-    
 }
-.links{
+
+.links {
     width: 300px;
 }
-.links ul li{
+
+.links ul li {
     margin-top: 10px;
 }
-.social li{
+
+.social li {
     margin-top: 10px;
     width: 100px;
-    
 }
-.connect{
+
+.connect {
     width: 400px;
-    
 }
-.connect li{
+
+.connect li {
     margin-top: 10px;
-    
 }
-.connect i{
+
+.connect i {
     margin-left: 5px;
     font-size: 15px;
-    
 }
 
-.connect div{
+.connect div {
     line-height: 30px;
-    
-}
 
+}

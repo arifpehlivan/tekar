@@ -1,40 +1,32 @@
-/* *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-} */
-/* .pop_up_image img{
-    width: 100px;
-    height: 100px;
-} */
-.image_grid{
-    /* margin-top: 800px; */
+.image_grid {
     margin-top: 70px;
     margin-left: 30px;
     width: 100vw;
     height: 700px;
     display: grid;
-    /* margin-left: -100px; */
     width: 90%;
-    /* margin-left: 100px; */
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 5px;
     z-index: 20000;
     overflow: hidden;
 }
-.image_grid img{
+
+.image_grid img {
     cursor: pointer;
     height: 300px;
-    
+
 }
-.image_card{
+
+.image_card {
     display: block;
 }
-.image_card img{
+
+.image_card img {
     width: 100%;
-    
+
 }
-.pop_up_container{
+
+.pop_up_container {
     display: block;
     position: fixed;
     top: 0;
@@ -45,88 +37,49 @@
     margin-top: 30px;
     border-radius: 20px;
 }
-.close_button{
+
+.close_button {
     padding: 30px;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
 }
-.close_button:hover{
+
+.close_button:hover {
     color: red;
 }
-.pop_up_image{
+
+.pop_up_image {
     width: 60vw;
     height: 70vh;
     margin: auto;
-    
+
 }
-.pop_up_image img{
+
+.pop_up_image img {
     width: 100%;
-    
+
     cursor: pointer;
 }
-.pop_tabs{
+
+.pop_tabs {
     width: 50vw;
     display: flex;
     margin: auto;
     justify-content: space-evenly;
 }
-.tab{
+
+.tab {
     width: 40px;
     height: 40px;
     cursor: pointer;
 }
-.tab img{
+
+.tab img {
     width: 100%;
     border-radius: 10px;
 }
-/* .image_grid img{
-    width: 300px;
-    height: 400px;
-} */
 
-
-/* .container{
-    width: 100%;
-    height: 100vh;
-    margin-left: 10px;
-    margin-top: 120px;
-    position: absolute;
-    top: 700px;
-    bottom: 100px;
-}
-.cards{
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 20px;
-    margin-left: auto;
-    position: relative;
-}
-
-.card img{
-    transition: ease-in-out 1s;
-}
-
-.card h3{
-    margin-left: 90px;
-    
-}
-
-.cards img:hover{
-    width: 520px;
-    height: 420px;
-}
-.container h2{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container img{
-    width: 500px;
-    height: 400px;
-} */
-
-.dark .pop_up_container{
+.dark .pop_up_container {
     background: rgb(94, 91, 91);
 }

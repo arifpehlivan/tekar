@@ -35,26 +35,6 @@ const Signup = () => {
                 </div>
             </div>
         </div>
-        // <form>
-        //     <h2>Kaydol</h2>
-        //     <div class="inputBox">
-        //         <input type="text" required="required"/>
-        //         <span>Ad Soyad</span>
-        //     </div>
-        //     <div class="inputBox">
-        //         <input type="text" required="required"/>
-        //         <span>Mail</span>
-        //     </div>
-        //     <div class="inputBox">
-        //         <input type="password" required="required"/>
-        //         <span>Şifre</span>
-        //     </div>
-        //     <div class="inputBox">
-        //         <input type="password" required="required"/>
-        //         <span>Şifre</span>
-        //     </div>
-        //     <button>Kaydol</button>
-        // </form>
     )
 }
 
