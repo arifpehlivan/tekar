@@ -14,19 +14,19 @@ const Header = () => {
     return (
         <header className={mode ? "dark" : "light"}> 
             <ul className='navigation'>
-                <li className="logo"><a href='/#' ><img src={logo} alt="" /></a></li>
-                <li><a href="/#">Anasayfa</a></li>
-                <li><a href="/gallery">Foto Galeri</a></li>
-                <li><a href="/about">Hakkımızda</a></li>
+                <li className="logo"><Link to='/' ><img src={logo} alt="" /></Link></li>
+                <li><Link to="/">Anasayfa</Link></li>
+                <li><Link to="/gallery">Foto Galeri</Link></li>
+                <li><Link to="/about">Hakkımızda</Link></li>
                 <li className='dropdown-menu'>
-                    <a href="/services">Hizmetler</a>
+                    <Link to="/services">Hizmetler</Link>
                     {/* <ul className='dropdown'>
                         <li>Lorem</li>
                         <li>Lorem</li>
                         <li>Lorem</li>
                     </ul> */}
                 </li>
-                <li><a href="/#connect">Iletisim</a></li>
+                <li><Link to="/connect">Iletisim</Link></li>
             </ul>
             <div className="header-login">        
                 <Link to="/login"><button>Giriş Yap</button></Link>
